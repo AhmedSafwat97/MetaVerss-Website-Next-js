@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import About from "./About";
+import Explore from "./Explore";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 
@@ -16,7 +17,14 @@ const Layout = ({ title }) => {
       <div className="bg-primary-black overflow-hidden">
         <Navbar/>
         <Hero/>
+        <div className="relative">
         <About/>
+        <div className="gradient-03 z-0"/>
+        <Explore/>
+        </div>
+        <div className="relative">
+        <div className="gradient-03 z-0"/>
+        </div>
         <div>The websitebody</div>
         <div>Footer</div>
         <div>Footer</div>
