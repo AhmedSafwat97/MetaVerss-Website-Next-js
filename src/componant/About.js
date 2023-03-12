@@ -23,7 +23,7 @@ const About = () => {
           <motion.span>| About Metverse</motion.span>
         </motion.p>
         <motion.p
-          variants={fadeIn}
+          variants={textVariant}
           className="mt-[8px] font-normal sm:text-[32px] 
         text-[20px] text-center text-secondary-white"
         >
@@ -42,7 +42,7 @@ const About = () => {
           explore the madness of the metaverse by scrolling down
         </motion.p>
         <motion.img
-        variants={fadeIn}
+        variants={textVariant2}
         src="../../arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain 
