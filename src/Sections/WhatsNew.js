@@ -9,6 +9,7 @@ import {
   textVariant2,
 } from "@/pages/utils/motion";
 import { newFeatures } from "@/pages/api";
+import Image from "next/image";
 const WhatsNew = () => {
   return (
     <section className={`${styles.paddings} relative z-10`}>
@@ -36,19 +37,28 @@ const WhatsNew = () => {
           </motion.h3>
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
             {newFeatures.map((feature) => (
-              <div key={feature} className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
               <div
-                className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
+                key={feature}
+                className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]"
               >
-                <img src={feature.imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
+                <div
+                  className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
+                >
+                  <Image
+                    width={1080}
+                    height={1920}
+                    src={feature.imgUrl}
+                    alt="icon"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+                <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
+                  Title {feature.title}
+                </h1>
+                <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+                  {feature.subtitle}
+                </p>
               </div>
-              <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
-                Title {feature.title}
-              </h1>
-              <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
-                {feature.subtitle}
-              </p>
-            </div>
             ))}
           </div>
         </motion.div>
@@ -57,8 +67,10 @@ const WhatsNew = () => {
           variants={planetVariants("right")}
           className={`${styles.flexCenter} flex-1`}
         >
-          <img
-            src="../../whats-new.png"
+          <Image
+            width={1080}
+            height={1920}
+            src="/whats-new.png"
             alt="get-started"
             className="w-[90%] h-[90%] object-contain"
           />

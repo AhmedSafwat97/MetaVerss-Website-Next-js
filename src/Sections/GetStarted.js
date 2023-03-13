@@ -9,6 +9,7 @@ import {
   textVariant2,
 } from "@/pages/utils/motion";
 import { startingFeatures } from "@/pages/api";
+import Image from "next/image";
 
 const GetStarted = () => {
   return (
@@ -26,8 +27,10 @@ const GetStarted = () => {
           variants={planetVariants("left")}
           className={`${styles.flexCenter} flex-1`}
         >
-          <img
-            src="../../get-started.png"
+          <Image
+            width={1080}
+            height={1920}
+            src="/get-started.png"
             alt="get-started"
             className="w-[90%] h-[90%] object-contain"
           />
@@ -47,12 +50,12 @@ const GetStarted = () => {
           </motion.h3>
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             {startingFeatures.map((feature, index) => (
-              <div key={feature} className={`${styles.flexCenter} flex-row`}>
+              <div key={index} className={`${styles.flexCenter} flex-row`}>
                 <div
                   className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
                 >
                   <p className="font-bold text-[20px] text-white">
-                   0{index + 1}
+                    0{index + 1}
                   </p>
                 </div>
                 <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">

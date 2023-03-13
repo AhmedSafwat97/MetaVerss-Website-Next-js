@@ -1,11 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
-import {
-  fadeIn,
-  staggerContainer,
-  textVariant2,
-} from "@/pages/utils/motion";
+import { fadeIn, staggerContainer, textVariant2 } from "@/pages/utils/motion";
+import Image from "next/image";
 
 const World = () => {
   return (
@@ -33,23 +30,47 @@ const World = () => {
           </motion.h3>
         </motion.div>
         <motion.div
-        variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-[68px] flex w-full h-[550px]"
-      >
-        <img src="../../map.png" alt="map" className="w-full h-full object-cover" />
+          variants={fadeIn("up", "tween", 0.3, 1)}
+          className="relative mt-[68px] flex w-full h-[550px]"
+        >
+          <Image
+            width={1080}
+            height={1920}
+            src="/map.png"
+            alt="map"
+            className="w-full h-full object-cover"
+          />
 
-        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="../../people-01.png" alt="people" className="w-full h-full" />
-        </div>
+          <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+            <Image
+              width={1080}
+              height={1920}
+              src="/people-01.png"
+              alt="people"
+              className="w-full h-full"
+            />
+          </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="../../people-02.png" alt="people" className="w-full h-full" />
-        </div>
+          <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+            <Image
+              width={1080}
+              height={1920}
+              src="/people-02.png"
+              alt="people"
+              className="w-full h-full"
+            />
+          </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="../../people-03.png" alt="people" className="w-full h-full" />
-        </div>
-      </motion.div>
+          <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+            <Image
+              width={1080}
+              height={1920}
+              src="/people-03.png"
+              alt="people"
+              className="w-full h-full"
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );
