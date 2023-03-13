@@ -1,5 +1,4 @@
-import Layout from '@/Componant/Layout'
-import styles from '@/styles/Home.module.css'
+import Layout from "@/Componant/Layout"
 import About from "@/Sections/About";
 import Explore from "@/Sections/Explore";
 import Feedback from "@/Sections/Feedback";
