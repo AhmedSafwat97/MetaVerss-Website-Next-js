@@ -12,7 +12,6 @@ import World from "@/Sections/World";
 export default function Home() {
   return (
     <Layout title="Home">
-    <h1 className='flex justify-center' >Hello</h1>
     <Hero/>
         <div className="relative">
         <About/>

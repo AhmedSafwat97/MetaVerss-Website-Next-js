@@ -19,7 +19,6 @@ const Layout = ({ title , children }) => {
         <Navbar/>
         <main style={{ flexGrow : 1 }}>{children}</main>
         <Footer/>
-      
       </div>
     </>
   );
