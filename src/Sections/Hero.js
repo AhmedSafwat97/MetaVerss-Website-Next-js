@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "@/pages/utils/motion";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -36,8 +37,10 @@ const Hero = () => {
         >
           <div className="absolute w-full h-[300px] hero-gradient
            rounded-top-[140px] z-[0] -top-[30px]"/>
-            <img
-              src="../../cover.png"
+            <Image
+             width={1080}
+             height={1920}
+              src="/cover.png"
               alt="cover"
               className="w-full sm:h-[500px] h-[350px] object-cover
                         rounded-tl-[140px] z-10 relative"
@@ -49,8 +52,10 @@ const Hero = () => {
                             relative z-10
                             "
               >
-                <img
-                  src="../../stamp.png"
+                <Image
+                 width={1080}
+                 height={1920}
+                  src="/stamp.png"
                   alt="stamp"
                   className="sm:w-[155px] w-[100px] sm:h[155px] h-[100px] object-contain"
                 />

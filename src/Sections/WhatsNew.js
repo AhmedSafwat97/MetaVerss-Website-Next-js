@@ -26,14 +26,14 @@ const WhatsNew = () => {
           variants={fadeIn("left", "tween", 0.2, 1)}
           className="flex flex-[0.75] justify-center flex-col font-normal text-[14px] text-secondary-white"
         >
-          <motion.span>| What's new ?</motion.span>
+          <motion.span>| What&apos;s new ?</motion.span>
           <motion.h3
             variants={textVariant2}
             initial="hidden"
             whileInView="show"
             className="mt-[8px] font-bold md:text-[30px] text-[30px] text-white"
           >
-            What's new about Metaversus ?
+            What&apos;s new about Metaversus ?
           </motion.h3>
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
             {newFeatures.map((feature) => (

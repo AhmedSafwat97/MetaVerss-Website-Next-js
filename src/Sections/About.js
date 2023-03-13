@@ -29,7 +29,7 @@ const About = () => {
         >
           <span className="font-extrabold text-white mx-2">Metaverse</span>
           is new thing in the future , where you can enjoy the virtual world by
-          feelings like it's really real, you can feel whhat you feel in this
+          feelings like it&apos;s really real, you can feel whhat you feel in this
           metaverse world , beacuse this really the
           <span className="font-extrabold text-white mx-2">
             madness of the metaverse
@@ -38,7 +38,7 @@ const About = () => {
           <span className="font-extrabold text-white mx-2">VR</span>
           devices you can easily
           <span className="font-extrabold text-white mx-2">explore</span>
-          the metaverse world you want , turn your dreams into reality . let's
+          the metaverse world you want , turn your dreams into reality . let&apos;s
           explore the madness of the metaverse by scrolling down
         </motion.p>
         <motion.img
