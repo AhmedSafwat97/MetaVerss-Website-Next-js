@@ -15,7 +15,7 @@ const Layout = ({ title , children }) => {
       </Head>
       <div className="bg-primary-black overflow-hidden">
         <Navbar/>
-        <main style={{ flexGrow : 1 }}>{children}</main>
+        <div>{children}</div>
         <Footer/>
       </div>
     </>
