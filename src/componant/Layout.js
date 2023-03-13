@@ -1,15 +1,12 @@
+
+import Home from "@/pages";
 import Head from "next/head";
 import React from "react";
-import About from "./About";
-import Explore from "./Explore";
-import GetStarted from "./GetStarted";
-import Hero from "./Hero";
-import Insights from "./Insights";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
-import WhatsNew from "./WhatsNew";
-import World from "./World";
 
-const Layout = ({ title }) => {
+
+const Layout = ({ title , children }) => {
   return (
     <>
       <Head>
@@ -20,33 +17,9 @@ const Layout = ({ title }) => {
       </Head>
       <div className="bg-primary-black overflow-hidden">
         <Navbar/>
-        <Hero/>
-        <div className="relative">
-        <About/>
-        <div className="gradient-03 z-0"/>
-        <Explore/>
-        </div>
-        <div className="relative">
-          <GetStarted/>
-        <div className="gradient-03 z-0"/>
-        <WhatsNew/>
-        </div>
-        <div className="relative">
-          <World/>
-        <div className="gradient-03 z-0"/>
-        <Insights/>
-        </div>
-        <div>The websitebody</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-        <div>Footer</div>
-
+        <main style={{ flexGrow : 1 }}>{children}</main>
+        <Footer/>
+      
       </div>
     </>
   );
