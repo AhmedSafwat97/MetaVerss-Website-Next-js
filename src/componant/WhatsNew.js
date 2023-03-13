@@ -8,7 +8,7 @@ import {
   planetVariants,
   textVariant2,
 } from "@/pages/utils/motion";
-import { newFeatures, startingFeatures } from "@/pages/api";
+import { newFeatures } from "@/pages/api";
 const WhatsNew = () => {
   return (
     <section className={`${styles.paddings} relative z-10`}>

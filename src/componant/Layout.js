@@ -4,8 +4,10 @@ import About from "./About";
 import Explore from "./Explore";
 import GetStarted from "./GetStarted";
 import Hero from "./Hero";
+import Insights from "./Insights";
 import Navbar from "./Navbar";
 import WhatsNew from "./WhatsNew";
+import World from "./World";
 
 const Layout = ({ title }) => {
   return (
@@ -28,6 +30,11 @@ const Layout = ({ title }) => {
           <GetStarted/>
         <div className="gradient-03 z-0"/>
         <WhatsNew/>
+        </div>
+        <div className="relative">
+          <World/>
+        <div className="gradient-03 z-0"/>
+        <Insights/>
         </div>
         <div>The websitebody</div>
         <div>Footer</div>
