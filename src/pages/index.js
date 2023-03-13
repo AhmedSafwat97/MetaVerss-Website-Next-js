@@ -1,12 +1,12 @@
-import Layout from "@/Componant/Layout"
+import Layout from "@/componant/Layout";
 import About from "@/Sections/About";
 import Explore from "@/Sections/Explore";
 import Feedback from "@/Sections/Feedback";
 import GetStarted from "@/Sections/GetStarted";
-import Hero from "@/Sections/Hero";
 import Insights from "@/Sections/Insights";
 import WhatsNew from "@/Sections/WhatsNew";
 import World from "@/Sections/World";
+
 
 export default function Home() {
   return (
