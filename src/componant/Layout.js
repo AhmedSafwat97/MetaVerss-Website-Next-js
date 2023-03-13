@@ -2,8 +2,10 @@ import Head from "next/head";
 import React from "react";
 import About from "./About";
 import Explore from "./Explore";
+import GetStarted from "./GetStarted";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import WhatsNew from "./WhatsNew";
 
 const Layout = ({ title }) => {
   return (
@@ -23,7 +25,9 @@ const Layout = ({ title }) => {
         <Explore/>
         </div>
         <div className="relative">
+          <GetStarted/>
         <div className="gradient-03 z-0"/>
+        <WhatsNew/>
         </div>
         <div>The websitebody</div>
         <div>Footer</div>
