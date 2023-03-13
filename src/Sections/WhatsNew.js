@@ -7,7 +7,7 @@ import {
   staggerContainer,
   planetVariants,
   textVariant2,
-} from "@/pages/utils/motion";
+} from "@/utils/motion";
 import { newFeatures } from "@/pages/api";
 import Image from "next/image";
 const WhatsNew = () => {

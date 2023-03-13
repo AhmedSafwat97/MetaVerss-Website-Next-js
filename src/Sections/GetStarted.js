@@ -7,7 +7,7 @@ import {
   staggerContainer,
   planetVariants,
   textVariant2,
-} from "@/pages/utils/motion";
+} from "@/utils/motion";
 import { startingFeatures } from "@/pages/api";
 import Image from "next/image";
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
-import { fadeIn, staggerContainer, textVariant2 } from "@/pages/utils/motion";
+import { fadeIn, staggerContainer, textVariant2 } from "@/utils/motion";
 import { exploreWorlds } from "@/pages/api";
 import Image from "next/image";
 

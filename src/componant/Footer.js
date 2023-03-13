@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
-import { footerVariants } from "@/pages/utils/motion";
+import { footerVariants } from "@/utils/motion";
 import { socials } from "@/pages/api";
 import Image from "next/image";
 

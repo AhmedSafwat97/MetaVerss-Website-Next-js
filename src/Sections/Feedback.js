@@ -6,7 +6,7 @@ import {
   textVariant2,
   staggerContainer,
   zoomIn,
-} from "@/pages/utils/motion";
+} from "@/utils/motion";
 import { insights } from "@/pages/api";
 import Image from "next/image";
 const Feedback = () => {

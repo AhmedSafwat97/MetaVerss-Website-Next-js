@@ -7,7 +7,7 @@ import {
   textContainer,
   textVariant,
   textVariant2,
-} from "@/pages/utils/motion";
+} from "@/utils/motion";
 
 const About = () => {
   return (
